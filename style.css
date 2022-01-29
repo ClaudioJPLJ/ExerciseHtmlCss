@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+@font-face {
+    font-family: 'droid';
+    src: url('fontes/FuturBlock-Regular.ttf') format('truetype');
+}
+
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #4F9AE0;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    display:grid
+      
+}
+
+h1{
+    font-family: 'Fenix', serif;
+    font-size: 1.8em;
+    text-shadow: 8px 7px 5.8px rgba(0, 0, 0, 0.479);
+    color:#E94F37
+
+}
+
+h2 {
+    font-family: 'Fenix', serif;
+    font-size: 1.5em;
+    text-shadow: 8px 7px 5.8px rgba(0, 0, 0, 0.438);
+    color:#E94F37
+
+}
+
+main > p {
+    text-align: justify;
+}
+
+
+.andfont{
+    font-family: 'droid', serif;
+    text-shadow: 1px 1px 2.5px  black;
+    font-size: 2.3em;
+    color: #F0F465
+
+}
+
+#head {
+    background-image: linear-gradient(to bottom, #4f9ae0ef 24%, #2a5b88 82%);
+    color:#F0F465
+}
+
+#navigation {
+    text-align: left;
+}
+
+#menulist {
+    display:inline;
+    list-style-type: none;
+}
+
+#menulist > li {
+    display:inline;
+    text-align:left;   
+    margin-left: 2%
+}
+
+#menulist > a {
+    display:inline-block;
+    text-align:left;   
+    margin-left: 6.5%;
+    text-decoration: none;
+    color: #F0F465;
+    font-size:1.2em;
+}
+
+#menulist > .hovernav:hover{
+    text-decoration:underline;
+    font-size:1.1em
+}
+
+#menulist > .hovernav:active{
+    color: #ffc422
+}
+
+
+#ingeneral {
+    max-width: 75%;
+    background-color: white;
+    margin:auto;
+}
+
+
+/*#F0F465 #CF5C36 #E94F37*/
