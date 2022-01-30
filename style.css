@@ -11,10 +11,10 @@ body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background-color: #4F9AE0;
+    background-image: linear-gradient(to bottom, #4F9AE0, #012870c9 109%);
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
-    display:grid
+    display:grid;       /* grid to connect in header */
       
 }
 
@@ -22,7 +22,7 @@ h1{
     font-family: 'Fenix', serif;
     font-size: 1.8em;
     text-shadow: 8px 7px 5.8px rgba(0, 0, 0, 0.479);
-    color:#E94F37
+    color:#E94F37       /* edit principal text */
 
 }
 
@@ -34,8 +34,28 @@ h2 {
 
 }
 
-main > p {
+a {
+    text-decoration: none;
+    color: #1a43f8;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 0.2px 0.2px 0.2px #1900f8;   /*all links receive */
+    
+}
+
+a:active {
+    color:#1900f8
+}
+
+p > a::after {
+    content: "🔗"
+}    /* link effects */
+
+article > p {
     text-align: justify;
+    text-indent: 28px;     /* justify only article content */
 }
 
 
@@ -43,13 +63,13 @@ main > p {
     font-family: 'droid', serif;
     text-shadow: 1px 1px 2.5px  black;
     font-size: 2.3em;
-    color: #F0F465
+    color: #F0F465     /* principal title */
 
 }
 
 #head {
     background-image: linear-gradient(to bottom, #4f9ae0ef 24%, #2a5b88 82%);
-    color:#F0F465
+    color:#F0F465       
 }
 
 #navigation {
@@ -73,12 +93,12 @@ main > p {
     margin-left: 6.5%;
     text-decoration: none;
     color: #F0F465;
-    font-size:1.2em;
+    font-size:1.2em;       /* nav configurations */
 }
 
 #menulist > .hovernav:hover{
     text-decoration:underline;
-    font-size:1.1em
+    font-size:1.1em               /* zoom out effect only nav link */
 }
 
 #menulist > .hovernav:active{
@@ -90,7 +110,114 @@ main > p {
     max-width: 75%;
     background-color: white;
     margin:auto;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /*border-bottom: solid 5px rgba(31, 32, 36, 0.959); */
+    box-shadow: 0px 7px 2px  rgba(31, 32, 36, 0.301)
+}
+
+p > span {
+    color: #268ceb;       /* change color on a specific word */
+
+}
+
+.sweetlist {
+    display:flex;
+    list-style-type: none;
+    font-weight: 700;       
+}
+
+.sweet1  {
+
+    text-align: left;
+    width: 280px;
+    padding: 5px;
+}
+
+.sweet2  {
+    
+    text-align: left;
+    width: 280px;
+    padding: 5px; /* two candy classes to align content */
+
+}
+
+aside > li::before {
+    content: "\2714  ";
+}
+
+li > span {
+    text-decoration: underline;
+    color:black;         /* only words underline */
+}
+
+#finalcontent {
+    border: solid 1px black;
+    width:95%;
+    margin:auto;
+    background-color: #73a6d68a    
+}
+
+#finalcontent > h2 {
+    max-width: 70%;
+    margin: auto;
+    border-radius: 1px 1px 15px 15px;      
+}
+
+#finalcontent > h2 {
+    background-image:linear-gradient(to left, #38e8bcd7, #d5f465c9);
+    text-shadow:none; 
+
+}
+
+#ending {
+    padding: 15px;
+    font-size: 1.1em     /* empashis on content  */
+}
+
+footer {
+    background-color: rgba(31, 32, 36, 0.863);
+    color: white;
+    height: 6em;
+    margin: 0;
+}
+
+footer > p {
+    margin: auto;
+    text-align: center;
+
+} 
+
+.sizecontrol {/* control aside to align the contacts */
+    max-width: 13.6em;
+    margin: auto;
+    text-align: left
+}
+.contacts {
+    display: inline;    /* for align contact list */
+    margin: 0;
+    
+}
+
+.sizecontrol > a {
+    color: #E94F37 ;
+    text-decoration: none;  /* configurations of contact list */
+
+}
+
+.sizecontrol > a:hover::after {
+    content: "«";
+    text-decoration: none;  /*using the hover/after effect */
 }
 
 
-/*#F0F465 #CF5C36 #E94F37*/
+.sizecontrol > a:active {
+    color: #e71b1b
+}
+
+
+/*#F0F465 #CF5C36 #E94F37* colors useds/
+
+
+
