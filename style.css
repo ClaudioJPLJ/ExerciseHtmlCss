@@ -6,11 +6,13 @@
     src: url('fontes/FuturBlock-Regular.ttf') format('truetype');
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
     background-image: linear-gradient(to bottom, #4F9AE0, #012870c9 109%);
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
@@ -62,18 +64,20 @@ article > p {
 .andfont{
     font-family: 'droid', serif;
     text-shadow: 1px 1px 2.5px  black;
-    font-size: 2.3em;
-    color: #F0F465     /* principal title */
-
+    font-size: 1.9em;
+    color: #F0F465;     /* principal title */
+    margin: 10px;
 }
 
 #head {
     background-image: linear-gradient(to bottom, #4f9ae0ef 24%, #2a5b88 82%);
-    color:#F0F465       
+    color:#F0F465;
+
 }
 
 #navigation {
     text-align: left;
+    margin: 10px;
 }
 
 #menulist {
@@ -107,8 +111,8 @@ article > p {
 
 
 #ingeneral {
-    max-width: 850px;
-    min-width: 300px;
+    max-width: 67%;
+    min-width: 270px;
     background-color: white;
     margin:auto;
     margin-bottom: 5px;
@@ -116,6 +120,14 @@ article > p {
     border-bottom-right-radius: 15px;
     /*border-bottom: solid 5px rgba(31, 32, 36, 0.959); */
     box-shadow: 0px 7px 2px  rgba(31, 32, 36, 0.301);
+}
+
+picture > img {     /* control size img */
+    width: 90%;
+}
+
+article > img {
+    width: 50%;
 }
 
 p > span {
@@ -126,16 +138,17 @@ p > span {
 #uniquevid {
     background-color: #3a68a8 ;
     padding: 20px;
-    padding-bottom: 54.2%;
+    padding-bottom: 54.3%;
     margin: 5px 0px;
     position:relative;
+    text-align: left;
 }
 
 #uniquevid > iframe {
     position: absolute;
-    width: 90%;
+    width: 93%;
     height: 90%;
-    left: 35px;
+    margin: -5px;
     
 }
 
@@ -177,7 +190,7 @@ li > span {
 }
 
 #finalcontent > h2 {
-    max-width: 70%;
+    width: 70%;
     margin: auto;
     border-radius: 1px 1px 15px 15px;      
 }
@@ -207,7 +220,7 @@ footer > p {
 } 
 
 .sizecontrol {/* control aside to align the contacts */
-    max-width: 13.6em;
+    width: 13.6em;
     margin: auto;
     text-align: left
 }
